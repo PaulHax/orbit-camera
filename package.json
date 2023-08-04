@@ -7,16 +7,18 @@
     "example": "example"
   },
   "dependencies": {
-    "gl-matrix": "^2.2.0"
+    "gl-matrix": "^3.4.3"
   },
   "devDependencies": {
+    "browserify": "^17.0.0",
     "bunny": "~1.0.0",
-    "simple-3d-shader": "~0.0.0",
     "gl-mesh": "~0.1.0",
-    "gl-now": "~0.0.3"
+    "gl-now": "~0.0.3",
+    "simple-3d-shader": "~0.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify example/example.js -o bundle.js"
   },
   "repository": {
     "type": "git",
